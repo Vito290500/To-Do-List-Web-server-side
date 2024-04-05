@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO LIST</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="dynamicLayout.js" defer></script>
+    <script src="homeFunction.js" defer></script>
+</head>
+<body>
+    <section class="main">
+
+        <nav class="nav-bar-vertical">
+            <div class="tools-nav-bar">
+                <h3>MENU</h3>
+
+                <button class="Home show" id="HomeBtn"><img src="immagini/home.png" alt="" width="30px" height="30px">HOME</button>
+                <button class="CalendarioBtn" id="CalendarBtn"><img src="immagini/calendario.png" alt="" width="30px" height="30px">CALENDAR</button>
+                <button class="NotaBtn" id="NoteBtn"><img src="immagini/nota.png" alt="" width="30px" height="30px">WRITE A NOTE</button>
+                <button class="InfoBtn" id="InfoBtn"><img src="immagini/info.png" alt="" width="30px" height="30px">INFO</button>
+
+                <!--Light Mode vs Dark Mode with click-->
+                <button id="Light" value="light">
+                    <img src="immagini/sun.png" alt="" width="25px" height="25px">
+                    <p>LIGHT MODE</p>
+                </button>
+            </div>      
+        </nav>
+
+        <!-- Populated Dynamically with Js -->
+        <div id="main-content" class="main-content">
+            
+            <section class="Home" id="Home">
+                <div class="header">
+                    <h3>TO DO LIST - BY VITO</h3>
+                </div>
+                <div class="Content">
+                    <div class="AddingTask" id="AddingTask">   
+                        <h3>ADD TASK</h3>
+
+                        <div class="Hours Input">
+                            <p>HOURS: </p>
+                            <input type="text" name="hours" id="hoursInput" value="">
+                        </div>    
+                        <div class="Tasks Input">
+                            <p>TASKS: </p>
+                            <input type="text" name="tasks" id="tasksInput" value="">
+                        </div>         
+                        <div class="Priority Input">
+                            <p>PRIORITY: </p>
+                            <input type="text" name="priority" id="priorityInput" value="">
+                        </div>
+                        
+                        <div class="ButtonDiv">
+                            <button id="clearBtn">
+                                <img src="immagini/clear.png" alt="" width="25px" height="25px">
+                                <p>CLEAR</p>
+                            </button>
+
+                            <button id="saveBtn">
+                                <img src="immagini/add.png" alt="" width="25px" height="25px">
+                                <p>SAVE</p>
+                            </button>
+                        </div>
+
+                    </div>
+
+
+                    <div class="AllTask">    
+                        <h4>ALL TASK</h4>
+                        <div id="Table" class="table">
+                            <table>
+                                <thead>
+                                    <tr class="Table_Header">
+                                        <th>TIME</th>
+                                        <th>TASK</th>
+                                        <th>PRIORITY</th>
+                                        <th>ACTION</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tbodyContainer" class="Table_Content">
+                                    <!-- dynamic populated with js -->
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </section>
+
+            <section class="Calendar" id="Calendar">
+                WELCOME TO CALENDAR
+            </section>
+            <section class="Note" id="Note">
+                WELCOME TO NOTE
+            </section>
+            <section class="Info" id="Info">
+                WELCOME TO INFO
+            </section>
+
+        </div>
+
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,191 @@
+:root{
+    --deep-bg-color: rgb(50, 5, 92); 
+    --second-bg-color:  rgb(23, 5, 40);
+    --third-bg-color: rgb(49, 49, 49);
+    --text-color: white;
+    --light-bg-color: rgb(132, 132, 132);
+    --fourth-bg-color: rgb(81, 81, 81);
+    --table-text-color: white;
+}
+body {
+    background-color: var(--deep-bg-color);  
+}
+.nav-bar-vertical {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8%;
+    background-color: var(--second-bg-color); 
+}
+.tools-nav-bar {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.tools-nav-bar button {
+    width: 100%;
+    height: 10%;
+    border: none;
+    color: var(--text-color);
+    background-color: var(--second-bg-color);
+    text-align: left;
+    display: flex; 
+    align-items: center; 
+}
+.tools-nav-bar button:hover{
+    cursor: pointer;
+    background-color: var(--deep-bg-color);
+}
+.tools-nav-bar button:last-child{
+    position: absolute;
+    bottom: 1rem;
+    border: 2px solid var(--text-color);
+    border-radius: 30px;
+    height: 6%;
+    width: 90%;
+    margin-left: 5%;
+    background-color: var(--light-bg-color);
+}
+.tools-nav-bar button img {
+    padding: 5px;
+}
+.tools-nav-bar h3{
+    padding: 40px;
+    color: var(--text-color);
+    text-align: center;
+} 
+.main-content{
+    width: 80%;
+    background-color: var(--third-bg-color);
+    color: var(--text-color);
+    position: absolute;
+    top: 10%;
+    left: 12.5%;
+    height: 80%;
+    border-radius: 20px 20px 0px 0px;
+    box-shadow: 1px 1px 10px 1px var(--third-bg-color, 0.5);
+}
+.Calendar,
+.Note,
+.Info{
+    display: none;
+}
+.header{
+    background-color: var(--second-bg-color);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 3rem;
+    border-radius: 20px 20px 0px 0px;
+    text-align: center;
+}
+.header h3{
+    margin-top: 0.8rem;
+}
+.Content{
+    display: flex;
+
+}
+.AddingTask{
+    width: 30%;
+    height: 600px;
+    margin: 5rem;
+    text-align: center;
+    border-right: 1px solid var(--text-color);
+}
+.AddingTask h3{
+    color: var(--text-color);
+    margin-top: 2rem;
+}
+.Hours{
+    margin-top: 4rem;
+}
+.AddingTask input{
+    background-color: var(--fourth-bg-color);
+    height: 30px;
+    width: 300px;
+    border: none;
+    border-bottom: 4px solid var(--deep-bg-color);
+    border-radius: 5px;
+    font-size: 20px;
+    color: var(--text-color);
+    outline: none;
+    margin-bottom: 2rem;
+
+}
+.Input p{
+    margin-left: -14rem;
+}
+
+.AddingTask button{
+    display: flex;
+    border-radius: 5px;
+    color: var(--text-color);
+    width: 110px;
+    margin-right: 1rem;
+    margin-top: 3rem;
+    border: none;
+    box-shadow: 0px 0px 2px 0px var(--text-color);
+}
+.AddingTask button:first-child{
+    background-color: red;
+}
+.AddingTask button:last-child{
+    background-color: green;
+}
+.AddingTask button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.AddingTask button img{
+    padding: 8px;
+}
+.ButtonDiv{
+    display: flex;
+    margin-left: 9rem;
+}
+
+.AllTask {
+    width: 55%;
+    height: 600px;
+    margin-top: 5rem;
+    text-align: center;
+    border-radius: 5px;
+    overflow: auto;
+}
+.AllTask h4{
+    height: 50px;
+}
+table{
+    width: 100%;
+}
+.Table_Header{
+    background-color: var(--deep-bg-color);
+    height: 40px;
+}
+table tr{
+    background-color: var(--fourth-bg-color);
+    height: 30px;
+}
+.Table_Content{
+    color: var(--table-text-color);
+}
+.AllTask::-webkit-scrollbar {
+    width: 12px;
+    margin-left: 2rem;
+}
+.deleteBtn{
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: var(--fourth-bg-color);
+}
+.deleteBtn:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.DeleteBtn{
+    display: none;
+}
